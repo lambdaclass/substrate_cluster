@@ -1,8 +1,3 @@
-variable "vpc_name" {
-  type = string
-  description = "Existing VPC name to create the cluster in"
-}
-
 variable "cluster_name" {
   type = string
   description = "Name for the cluster for AWS resources to have prefixed"
