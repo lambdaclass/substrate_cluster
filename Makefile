@@ -19,7 +19,6 @@ run-ansible:
 	. ansible/.env && ansible-playbook -i ansible/inventory.yaml ansible/playbooks/substrate-node.yaml
 
 all: infrastructure update-ansible-inventory run-ansible
-#all: update-ansible-inventory run-ansible
 
 destroy:
 	@terraform -chdir=terraform/example_substrate_cluster/ destroy
