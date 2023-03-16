@@ -1,0 +1,12 @@
+[Unit]
+Description=Substrate dev node
+
+[Service]
+WorkingDirectory=/home/admin/substrate-node-template
+Restart=on-failure
+ExecStart=/home/admin/substrate-node-template/target/release/node-template --dev
+ExecReload=/bin/kill -HUP
+KillSignal=SIGTERM
+
+[Install]
+WantedBy=multi-user.target
