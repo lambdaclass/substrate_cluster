@@ -1,0 +1,20 @@
+substrate_nodes:
+  hosts:
+    node0:
+      ansible_host: "{{ lookup('env','NODE0') }}"
+      ansible_user: admin
+      ansible_python_interpreter: /usr/bin/python3
+      ansible_ssh_private_key_file: "{{ lookup('env','ANSIBLE_SSH_PKEY') }}"
+      ansible_ssh_extra_args: '-o StrictHostKeyChecking=no'
+    node1:
+      ansible_host: "{{ lookup('env','NODE1') }}"
+      ansible_user: admin
+      ansible_python_interpreter: /usr/bin/python3
+      ansible_ssh_private_key_file: "{{ lookup('env','ANSIBLE_SSH_PKEY') }}"
+      ansible_ssh_extra_args: '-o StrictHostKeyChecking=no'
+    node2:
+      ansible_host: "{{ lookup('env','NODE2') }}"
+      ansible_user: admin
+      ansible_python_interpreter: /usr/bin/python3
+      ansible_ssh_private_key_file: "{{ lookup('env','ANSIBLE_SSH_PKEY') }}"
+      ansible_ssh_extra_args: '-o StrictHostKeyChecking=no'
