@@ -16,7 +16,8 @@ To execute the example, inspect the [terraform/example_substrate_cluster](./terr
 Also inspect the [Makefile](./Makefile) and make sure the `AWS_ASG_NAME and `ANSIBLE_SSH_PKEY` variables are correctly set:
 * `AWS_ASG_NAME`: use the same value form `cluster_name` above, plus suffixing `_nodes`.
 * `ANSIBLE_SSH_PKEY`: absolute path to the SSH private key used to access the EC2 instances
-This last two variables usage needs to be improved to not have to edit the Makefile.
+
+These last two variables usage needs to be improved to not have to edit the Makefile.
 
 ### Requirements
 * Ansible 2.12.1 or newer
