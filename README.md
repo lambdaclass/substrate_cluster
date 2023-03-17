@@ -19,9 +19,9 @@ Also inspect the [Makefile](./Makefile) and make sure the `AWS_ASG_NAME and `ANS
 This last two variables usage needs to be improved to not have to edit the Makefile.
 
 ### Requirements
-* Ansible 2.12.1 or older
-* Terraform 1.3.6 or older
-* AWS CLI 2.7.17 or older
+* Ansible 2.12.1 or newer
+* Terraform 1.3.6 or newer
+* AWS CLI 2.7.17 or newer
 
 After setting the required variables and having the requirements met, to run this automation, `cd` to the root of this repo, and execute:
 ```shell
