@@ -5,7 +5,7 @@ This repo contains the automation code to deploy a [substrate.io](https://substr
 To execute the example, inspect the [terraform/example_substrate_cluster](./terraform/example_substrate_cluster) folder:
 * `main.tf`:
   * `cluster_name`: the name for all the AWS resources to be prefixed
-  * `ssh_key_name`: ssh key name of the key to assign to the EC2 instances (it must already exist)
+  * `ssh_key_name`: ssh key name of the key to assign to the EC2 instances (it must already exist in the AWS region)
   * `node_count`: number of EC2 instances to launch
 
 * `providers.tf`:
